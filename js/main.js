@@ -6,5 +6,12 @@ $(document).ready(function(){
 		},1500);
 	});
 
-	
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 0){
+			$('.ir-arriba').slideDown(300);
+		}
+		else{
+			$('.ir-arriba').slideUp(300);
+		}
+	});
 });
